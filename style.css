@@ -1,0 +1,71 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    #2a0038 10%,  
+    #0d0017 30%,
+    #000000 100%   
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@font-face {
+  font-family: 'font';
+  src: url('font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#headin {
+  font-family: 'font';
+  text-align: center;
+  color: #fbc02d; 
+  font-size: 5rem;
+  margin-top: 20px;
+}
+#desc {
+  max-width: 1200px;
+  margin: 20px auto 60px auto;
+  text-align: justify;
+  font-size: 1.25rem;
+  color: #f5f1e6; 
+  font-family: 'Times New Roman', Times, serif;
+}
+.card_contain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.card {
+  background-color: #311b54; 
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 15px;
+  color: #f5f1e6;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: block;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 15px 5px #fbc02d,
+    0 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
